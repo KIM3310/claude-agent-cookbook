@@ -1,0 +1,38 @@
+{
+  "runs": [
+    {
+      "user_prompt": "Summarize Section 01 in one sentence.",
+      "text": "Section 01 sets the frame for routine operational tasks [section:01].",
+      "input_tokens": 3280,
+      "output_tokens": 48,
+      "cache_creation_input_tokens": 3180,
+      "cache_read_input_tokens": 0,
+      "cost_usd": 0.01286
+    },
+    {
+      "user_prompt": "What does Section 02 require for record retention?",
+      "text": "Section 02 requires retention for the period mandated by policy [section:02].",
+      "input_tokens": 3280,
+      "output_tokens": 52,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 3180,
+      "cost_usd": 0.00183
+    },
+    {
+      "user_prompt": "If an employee forgets manager sign-off, which section applies?",
+      "text": "Section 02 covers sign-off and retention obligations [section:02].",
+      "input_tokens": 3280,
+      "output_tokens": 50,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 3180,
+      "cost_usd": 0.00180
+    }
+  ],
+  "summary": {
+    "total_requests": 3,
+    "cache_write_tokens": 3180,
+    "cache_read_tokens_total": 6360,
+    "estimated_prefix_reuse_pct": 100.0,
+    "total_cost_usd": 0.01649
+  }
+}

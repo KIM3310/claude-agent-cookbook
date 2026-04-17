@@ -1,0 +1,24 @@
+{
+  "prompt": "What's the weather in Seoul right now?",
+  "tool_calls": [
+    {
+      "tool": "get_weather",
+      "input": {
+        "city": "Seoul",
+        "unit": "celsius"
+      },
+      "output": "{\"city\": \"Seoul\", \"unit\": \"celsius\", \"temperature\": 22.0, \"conditions\": \"clear\"}",
+      "is_error": false
+    }
+  ],
+  "final_text": "Seoul is currently 22C with clear conditions.",
+  "stop_reason": "end_turn",
+  "usage": {
+    "requests": 2,
+    "input_tokens": 450,
+    "output_tokens": 72,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cost_usd": 0.00243
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "cancelled": true,
+  "stop_reason": "cancelled",
+  "text": "Prompt caching lets applications share a stable system-prompt prefix across many requests. The first request pays a small write premium while Claude stores the cached tokens; subsequent requests read from the cache at roughly ten percent of the normal input",
+  "usage": {
+    "output_tokens": 47
+  }
+}

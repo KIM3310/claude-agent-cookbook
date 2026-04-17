@@ -1,0 +1,13 @@
+{
+  "batch_id": "msgbatch_01HZDMM3V7K8ZB",
+  "status": "ended",
+  "polls": 5,
+  "result_count": 100,
+  "first_results": [
+    {"custom_id": "eval-0000", "result_type": "succeeded", "text": "neutral"},
+    {"custom_id": "eval-0001", "result_type": "succeeded", "text": "neutral"},
+    {"custom_id": "eval-0002", "result_type": "succeeded", "text": "neutral"},
+    {"custom_id": "eval-0003", "result_type": "succeeded", "text": "neutral"},
+    {"custom_id": "eval-0004", "result_type": "succeeded", "text": "neutral"}
+  ]
+}

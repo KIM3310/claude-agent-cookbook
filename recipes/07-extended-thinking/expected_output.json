@@ -1,0 +1,9 @@
+{
+  "visible_answer": "- 2026-06-01: Seoul ICN -> San Francisco SFO (morning)\n- 2026-06-02: Free day in SF\n- 2026-06-03: Meeting in SF; evening at leisure\n- 2026-06-04: SF -> Seattle SEA (morning domestic flight 1)\n- 2026-06-05: Full day in Seattle\n- 2026-06-06: Seattle -> San Francisco SFO (morning domestic flight 2)\n- 2026-06-07: Free day in SF\n- 2026-06-08: SFO -> Seoul ICN (morning)\n\nMinimum total flight count: 4 (two international + two domestic).",
+  "thinking_summary": "Let me enumerate the constraints: one international outbound, one international return, meeting on 06-03 in SF, two consecutive nights in Seattle, every flight before 12:00, at most two domestic flights. If I fly ICN->SFO, SFO->SEA, SEA->SFO, SFO->ICN, that is 2 int'l + 2 domestic = 4 flights, within budget. I need to verify Seattle gets two consecutive nights...",
+  "thinking_chars": 1847,
+  "input_tokens": 380,
+  "output_tokens": 920,
+  "cache_read_input_tokens": 0,
+  "stop_reason": "end_turn"
+}

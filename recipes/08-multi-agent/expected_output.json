@@ -1,0 +1,17 @@
+{
+  "iterations": 4,
+  "final_document": "## Positioning\n- Atlas v2 grounds answers in the Frontier handbook, so managers trust responses.\n- Region-aware citations prevent policy drift between Seoul and Singapore.\n- Optimized for HR and procurement flows before general knowledge Q&A.\n\n## Copy\nAtlas v2 is how the Frontier Labs team gets answers to real policy questions fast. Ask in Korean or English; see a citation to the exact handbook section; act with confidence.\n\nBuilt for managers and finance ops who need to move quickly without waiting on a people-operations ticket, Atlas v2 respects per-region policy variants from day one.\n\n## Engineering plan\n1. Infrastructure: deploy Sonnet-backed agent with prompt-caching.\n2. Data: index handbook variants per region with BM25.\n3. Evaluation: launch faithfulness rubric against 50-case gold set.\n4. Rollout: gated launch to Seoul, then Singapore two weeks later.\n",
+  "trace": [
+    {"specialist": "research",   "input_keys": ["brief"], "output_chars": 342},
+    {"specialist": "copywriter", "input_keys": ["brief", "positioning_notes"], "output_chars": 308},
+    {"specialist": "engineer",   "input_keys": ["brief"], "output_chars": 235}
+  ],
+  "usage": {
+    "requests": 7,
+    "input_tokens": 2800,
+    "output_tokens": 980,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cost_usd": 0.02310
+  }
+}

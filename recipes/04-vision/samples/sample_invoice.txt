@@ -1,0 +1,30 @@
+=============================================
+           ACME SUPPLY COMPANY
+  1234 Industrial Way, Portland, OR 97201
+=============================================
+
+INVOICE #INV-2026-04217
+Issue date: 2026-04-15
+Due date:   2026-05-15
+Status:     OUTSTANDING
+
+Bill to:
+  Doeon Kim
+  Frontier Labs
+  1-1 Gangnam-daero, Seoul 06158
+
+---------------------------------------------
+Line items
+---------------------------------------------
+SKU          Description            Qty    Unit     Total
+A-440        Stainless fasteners      24    $0.75    $18.00
+B-112        Neoprene gaskets         12    $2.10    $25.20
+C-099        Industrial adhesive       2   $42.00    $84.00
+---------------------------------------------
+                                  Subtotal:        $127.20
+                                  Tax (8.5%):       $10.81
+                                  Shipping:         $15.00
+                                  TOTAL:           $153.01
+
+Payment terms: NET-30
+Remit to:     ACME Supply, Account 0017-44-2201

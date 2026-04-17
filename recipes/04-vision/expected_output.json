@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "parsed": {
+    "vendor_name": "ACME Supply Company",
+    "invoice_number": "INV-2026-04217",
+    "issue_date": "2026-04-15",
+    "due_date": "2026-05-15",
+    "total_usd": 153.01,
+    "currency": "USD",
+    "line_items": [
+      {"sku": "A-440", "description": "Stainless fasteners", "qty": 24, "unit_price": 0.75, "total": 18.00},
+      {"sku": "B-112", "description": "Neoprene gaskets",   "qty": 12, "unit_price": 2.10, "total": 25.20},
+      {"sku": "C-099", "description": "Industrial adhesive", "qty":  2, "unit_price": 42.00, "total": 84.00}
+    ]
+  },
+  "raw_text": "{\"vendor_name\":\"ACME Supply Company\", ...}",
+  "usage": {
+    "requests": 1,
+    "input_tokens": 820,
+    "output_tokens": 240,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cost_usd": 0.00606
+  }
+}

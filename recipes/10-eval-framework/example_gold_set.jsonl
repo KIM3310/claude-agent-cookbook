@@ -1,0 +1,20 @@
+{"case_id": "math-01", "prompt": "What is 2+2?", "expected": 4, "metadata": {"topic": "arithmetic"}}
+{"case_id": "math-02", "prompt": "What is 10*7?", "expected": 70, "metadata": {"topic": "arithmetic"}}
+{"case_id": "math-03", "prompt": "What is 100/4?", "expected": 25, "metadata": {"topic": "arithmetic"}}
+{"case_id": "math-04", "prompt": "What is 9*9?", "expected": 81, "metadata": {"topic": "arithmetic"}}
+{"case_id": "math-05", "prompt": "What is 3+5+7?", "expected": 15, "metadata": {"topic": "arithmetic"}}
+{"case_id": "cite-01", "prompt": "When does prompt caching apply a premium?", "expected": "on first write", "metadata": {"topic": "caching"}}
+{"case_id": "cite-02", "prompt": "Which tier of Claude is cheapest?", "expected": "Haiku", "metadata": {"topic": "models"}}
+{"case_id": "cite-03", "prompt": "What stop_reason indicates tool use?", "expected": "tool_use", "metadata": {"topic": "tool-use"}}
+{"case_id": "cite-04", "prompt": "Which API runs 10k prompts asynchronously?", "expected": "Message Batches API", "metadata": {"topic": "batch"}}
+{"case_id": "cite-05", "prompt": "What field reveals cache reads?", "expected": "cache_read_input_tokens", "metadata": {"topic": "caching"}}
+{"case_id": "class-01", "prompt": "Classify: 'I love this product'", "expected": "positive", "metadata": {"topic": "sentiment"}}
+{"case_id": "class-02", "prompt": "Classify: 'This is terrible'", "expected": "negative", "metadata": {"topic": "sentiment"}}
+{"case_id": "class-03", "prompt": "Classify: 'Delivery was on time'", "expected": "neutral", "metadata": {"topic": "sentiment"}}
+{"case_id": "class-04", "prompt": "Classify: 'Best purchase ever'", "expected": "positive", "metadata": {"topic": "sentiment"}}
+{"case_id": "class-05", "prompt": "Classify: 'Package was damaged'", "expected": "negative", "metadata": {"topic": "sentiment"}}
+{"case_id": "ext-01", "prompt": "JSON extract: name=Acme", "expected": "{\"name\": \"Acme\"}", "metadata": {"topic": "extract"}}
+{"case_id": "ext-02", "prompt": "JSON extract: qty=12", "expected": "{\"qty\": 12}", "metadata": {"topic": "extract"}}
+{"case_id": "ext-03", "prompt": "JSON extract: currency=USD", "expected": "{\"currency\": \"USD\"}", "metadata": {"topic": "extract"}}
+{"case_id": "ext-04", "prompt": "JSON extract: date=2026-04-17", "expected": "{\"date\": \"2026-04-17\"}", "metadata": {"topic": "extract"}}
+{"case_id": "ext-05", "prompt": "JSON extract: total=153.01", "expected": "{\"total\": 153.01}", "metadata": {"topic": "extract"}}

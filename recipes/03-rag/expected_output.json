@@ -1,0 +1,19 @@
+{
+  "query": "How does prompt caching affect cost?",
+  "hits": [
+    {"doc_id": "02_prompt_caching", "title": "Prompt caching", "score": 4.823},
+    {"doc_id": "06_batch_api",      "title": "Message Batches API", "score": 1.214},
+    {"doc_id": "08_models",         "title": "Claude model family", "score": 0.941}
+  ],
+  "answer": "Prompt caching charges a 25% premium when the cache is first written, then reads cached tokens at roughly 10% of the normal input price [doc:02_prompt_caching]. Applications with long, stable system prompts shared across many short queries see the largest savings [doc:02_prompt_caching].",
+  "citations": ["02_prompt_caching", "02_prompt_caching"],
+  "citation_coverage": 1.0,
+  "usage": {
+    "requests": 1,
+    "input_tokens": 420,
+    "output_tokens": 110,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cost_usd": 0.00291
+  }
+}
