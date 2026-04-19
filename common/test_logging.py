@@ -20,7 +20,7 @@ def test_json_formatter_emits_parseable_line() -> None:
         args=(),
         exc_info=None,
     )
-    record.tokens_used = 42  # type: ignore[attr-defined]
+    record.tokens_used = 42
     rendered = formatter.format(record)
     payload = json.loads(rendered)
     assert payload["message"] == "hello"

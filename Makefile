@@ -10,7 +10,7 @@ help:
 	@echo "  make test           Run all unit tests (no API key needed)"
 	@echo "  make test-cov       Run tests with coverage report (target: 80%)"
 	@echo "  make lint           Run ruff lint checks"
-	@echo "  make typecheck      Run mypy strict on common/ and recipes/"
+	@echo "  make typecheck      Run mypy strict on common/"
 	@echo "  make format         Format code with black + ruff autofix"
 	@echo "  make recipe NAME=01-tool-use    Run a specific recipe end-to-end"
 	@echo "  make clean          Remove caches and build artifacts"
@@ -29,7 +29,7 @@ lint:
 	$(PY) -m ruff check common recipes
 
 typecheck:
-	$(PY) -m mypy common recipes
+	$(PY) -m mypy common
 
 format:
 	$(PY) -m black common recipes

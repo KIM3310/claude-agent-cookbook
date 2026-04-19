@@ -39,10 +39,10 @@ def test_measure_once_reports_cache_creation_on_first_request() -> None:
     response = build_response(
         content=[FakeTextBlock("Summary.")],
         usage=FakeUsage(
-            in_tok=1200,
-            out_tok=30,
-            cache_read=0,
-            cache_write=1100,
+            input_tokens=1200,
+            output_tokens=30,
+            cache_read_input_tokens=0,
+            cache_creation_input_tokens=1100,
         ),
         stop_reason="end_turn",
     )
@@ -56,15 +56,15 @@ def test_measure_once_reports_cache_creation_on_first_request() -> None:
 def test_compare_runs_reports_reuse_on_subsequent_requests() -> None:
     first = build_response(
         content=[FakeTextBlock("first")],
-        usage=FakeUsage(1200, 30, cache_read=0, cache_write=1100),
+        usage=FakeUsage(1200, 30, cache_read_input_tokens=0, cache_creation_input_tokens=1100),
     )
     second = build_response(
         content=[FakeTextBlock("second")],
-        usage=FakeUsage(1200, 30, cache_read=1100, cache_write=0),
+        usage=FakeUsage(1200, 30, cache_read_input_tokens=1100, cache_creation_input_tokens=0),
     )
     third = build_response(
         content=[FakeTextBlock("third")],
-        usage=FakeUsage(1200, 30, cache_read=1100, cache_write=0),
+        usage=FakeUsage(1200, 30, cache_read_input_tokens=1100, cache_creation_input_tokens=0),
     )
     client = _client(first, second, third)
     report = compare_runs(client)
@@ -78,11 +78,11 @@ def test_compare_runs_reports_zero_reuse_when_cache_misses() -> None:
     # Every request writes anew — no hits
     r1 = build_response(
         content=[FakeTextBlock("a")],
-        usage=FakeUsage(1200, 30, cache_read=0, cache_write=1100),
+        usage=FakeUsage(1200, 30, cache_read_input_tokens=0, cache_creation_input_tokens=1100),
     )
     r2 = build_response(
         content=[FakeTextBlock("b")],
-        usage=FakeUsage(1200, 30, cache_read=0, cache_write=1100),
+        usage=FakeUsage(1200, 30, cache_read_input_tokens=0, cache_creation_input_tokens=1100),
     )
     client = _client(r1, r2)
     report = compare_runs(client, prompts=["a", "b"])

@@ -126,6 +126,7 @@ def stream_response(
     were the SDK's streaming iterator. In production, it is None and the
     SDK's ``messages.stream`` context manager is used.
     """
+
     session = session or StreamSession()
 
     if event_source is not None:
