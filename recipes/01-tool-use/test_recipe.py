@@ -7,7 +7,6 @@ from unittest.mock import MagicMock
 import pytest
 
 from common.client import CookbookClient
-from recipes import _fixtures  # type: ignore[attr-defined]
 from recipes._fixtures import FakeTextBlock, FakeToolUseBlock, FakeUsage, build_response
 
 from .recipe import GetWeatherArgs, build_registry, get_weather, run
