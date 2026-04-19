@@ -111,14 +111,14 @@ def test_non_transient_errors_are_not_retried() -> None:
 
 
 def test_is_transient_error_classification() -> None:
-    class Err(Exception):
+    class TransientError(Exception):
         def __init__(self, status: int) -> None:
             self.status_code = status
 
-    assert _is_transient_error(Err(429))
-    assert _is_transient_error(Err(503))
-    assert not _is_transient_error(Err(400))
-    assert not _is_transient_error(Err(404))
+    assert _is_transient_error(TransientError(429))
+    assert _is_transient_error(TransientError(503))
+    assert not _is_transient_error(TransientError(400))
+    assert not _is_transient_error(TransientError(404))
 
 
 def test_estimate_cost_for_unknown_model_falls_back() -> None:

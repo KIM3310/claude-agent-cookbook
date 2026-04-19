@@ -7,7 +7,6 @@ and agentic pipelines.
 from __future__ import annotations
 
 import re
-from typing import Any
 
 from common.eval import EvalCase, Rubric, RubricScore
 

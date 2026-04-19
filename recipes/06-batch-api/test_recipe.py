@@ -6,8 +6,6 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import MagicMock
 
-import pytest
-
 from common.client import CookbookClient
 
 from .recipe import (

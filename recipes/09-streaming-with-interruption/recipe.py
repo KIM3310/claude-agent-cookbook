@@ -27,7 +27,7 @@ import threading
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Iterable, Iterator
+from typing import Any, Callable, Iterable
 
 from common.client import CookbookClient
 from common.logging import get_logger, setup_logging
@@ -126,7 +126,6 @@ def stream_response(
     were the SDK's streaming iterator. In production, it is None and the
     SDK's ``messages.stream`` context manager is used.
     """
-
     session = session or StreamSession()
 
     if event_source is not None:
