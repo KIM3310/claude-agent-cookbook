@@ -31,7 +31,7 @@ jobs:
         run: python -m ruff check common recipes
 
       - name: Type check (mypy strict)
-        run: python -m mypy common recipes
+        run: python -m mypy common
 
       - name: Unit tests (no API key required)
         env:

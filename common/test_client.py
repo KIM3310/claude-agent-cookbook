@@ -91,9 +91,7 @@ def test_retries_on_transient_then_succeeds(monkeypatch: pytest.MonkeyPatch) -> 
     client = CookbookClient.with_raw_client(raw)
     client.max_retries = 2
     # Avoid the real sleep between retries
-    import common.client as mod
-
-    monkeypatch.setattr(mod.time, "sleep", lambda _s: None)
+    monkeypatch.setattr("common.client.time.sleep", lambda _s: None)
     result = client.create_message(messages=[{"role": "user", "content": "hi"}])
     assert result.text == "recovered"
     assert raw.messages.create.call_count == 2
